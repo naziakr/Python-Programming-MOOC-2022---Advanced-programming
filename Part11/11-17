@@ -1,0 +1,15 @@
+class Employee:
+    def __init__(self, name: str):
+        self.name = name
+        self.subordinates = []
+
+    def add_subordinate(self, employee: 'Employee'):
+        self.subordinates.append(employee)
+
+def count_subordinates(employee: Employee):
+    subordinate = 0
+    for emp in employee.subordinates:
+        subordinate +=1
+        subordinate += count_subordinates(emp)
+    
+    return subordinate
