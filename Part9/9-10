@@ -1,0 +1,17 @@
+class Recording:
+    def __init__(self, length):
+        if length < 0:
+            raise ValueError('Length of recording cannot be below 0.')
+        self.__length = length
+
+    @property
+    def length(self):
+        return self.__length
+    
+    @length.setter
+    def length(self, new):
+        if new>0:
+            self.__length =new
+        else:
+            
+            raise ValueError('Length of recording cannot be below 0.')
