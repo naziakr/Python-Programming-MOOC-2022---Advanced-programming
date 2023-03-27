@@ -1,0 +1,3 @@
+def filter_forbidden(string: str, forbidden: str):
+    new = [char for char in string if char not in forbidden]
+    return "".join(new)
