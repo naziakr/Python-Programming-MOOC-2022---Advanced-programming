@@ -1,0 +1,7 @@
+def even_numbers(beginning: int, maximum: int):
+    number = beginning
+    # return [a for a in range(beginning,maximum+1) if a%2==0]
+    while number <= maximum:
+        if number%2 == 0:
+            yield number
+        number += 1
