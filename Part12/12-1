@@ -1,0 +1,7 @@
+def sort_by_remaining_stock(items: list):   
+
+    def sort_by_price(items: list):
+        return items[2]
+    
+    return sorted(items, key=sort_by_price)
+    
