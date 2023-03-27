@@ -1,0 +1,4 @@
+def sort_by_seasons(items: list):
+    def number_of_season(item):
+        return item["seasons"]
+    return sorted(items, key=number_of_season)
